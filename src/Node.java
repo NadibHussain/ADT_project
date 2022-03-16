@@ -9,7 +9,17 @@ public class Node {
     }
 
     public String toString(){
-        return coords[0]+" "+coords[1];
+        if (left == null && right == null){
+            return coords[0]+" "+coords[1];
+        }
+        else {
+            if (index == 0){
+                return "A:"+coords[index];
+            }
+            else {
+                return "S:"+coords[index];
+            }
+        }
     }
 
 }
